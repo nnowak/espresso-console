@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Espresso Console</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" language="JavaScript" src="jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="commands.js"></script>
+    <script type="text/javascript" src="lib.js"></script>
+    <script type="text/javascript" language="JavaScript" src="main.js"></script>
+
+</head>
+<body>
+<div class="header"> <span class="headerTitle">   Espresso Console </span>
+<img class="logo" src="images/logo_tmp.png"></div>
+<div class="content">
+   <div class="leftSide">
+    <div class="info">
+        <p id="p1">Welcome to interactive espresso console! It's nice that you check out the wonderful espresso comands, the little helper of the M-Project</p>
+        <p id="p2"><span>If you are ready you can insert your name and start  building an M-Project Application with espresso!</span></p>
+        First name: <input id='input' type="text" name="FirstName" value="Name" onblur="if(value=='') value = 'Name'"  onfocus="if(value=='Name') value = ''"><br>
+    </div>
+       </div>
+    <div class="rightSide">
+    <div id="console">
+    <div id="consoleText">
+        <div id="form" rows="4" cols="50">
+
+        </div>
+    </div>
+    </div>
+        <div class="button"> <a id="reset">Reset</a></div>
+
+
+    </div>
+</div>
+<div class="footer"></div>
+</body>
+</html>
